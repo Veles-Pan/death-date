@@ -399,7 +399,7 @@ export default {
 	position: relative;
 }
 
-.intro__button:hover {
+.test__button:hover {
 	cursor: pointer;
 	opacity: 0.8;
 }
