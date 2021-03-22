@@ -11,39 +11,40 @@
 				{{ index }} : <a :href="item" class="api-info__link">Link to API</a>
 			</p>
 			<p v-else-if="index === 'homeworld'" class="api-info__text">
-				{{ index }} :
-				<a :href="item" class="api-info__link">{{
-					getInfoFromApi(item).name
-				}}</a>
+				{{ index }} : <span class="hidden">{{ getHomeworldName(item) }}</span>
+				<a :href="item" class="api-info__link">{{ homeworld }}</a>
 			</p>
 			<p v-else-if="index === 'films'" class="api-info__text">
 				{{ index }} :
 				<a
-					v-for="element in item"
+					v-for="(element, index) in item"
 					:key="element"
 					:href="element"
 					class="api-info__link"
-					>{{ getInfoFromApi(element).title + ", " }}</a
+					><span class="hidden">{{ getFilmsTitle(element) }}</span>
+					{{ filmTitle[index] + ", " }}</a
 				>
 			</p>
 			<p v-else-if="index === 'vehicles'" class="api-info__text">
 				{{ index }} :
 				<a
-					v-for="element in item"
+					v-for="(element, index) in item"
 					:key="element"
 					:href="element"
 					class="api-info__link"
-					>{{ getInfoFromApi(element).name + ", " }}</a
+					><span class="hidden">{{ getVehiclesNames(element) }}</span
+					>{{ vehicles[index] + ", " }}</a
 				>
 			</p>
 			<p v-else-if="index === 'starships'" class="api-info__text">
 				{{ index }} :
 				<a
-					v-for="element in item"
+					v-for="(element, index) in item"
 					:key="element"
 					:href="element"
 					class="api-info__link"
-					>{{ getInfoFromApi(element).name + ", " }}</a
+					><span class="hidden">{{ getStarshipsNames(element) }}</span
+					>{{ starships[index] + ", " }}</a
 				>
 			</p>
 
@@ -59,6 +60,10 @@ export default {
 	data() {
 		return {
 			list: "",
+			homeworld: "",
+			filmTitle: [],
+			vehicles: [],
+			starships: [],
 		};
 	},
 
@@ -81,32 +86,84 @@ export default {
 			return dd + "." + mm + "." + yy;
 		},
 
+		async getHomeworldName(url) {
+			try {
+				let response = await fetch(url);
+				let data = await response.json();
+				this.homeworld = data.name;
+			} catch (error) {
+				alert(error);
+			}
+		},
+
+		async getFilmsTitle(url) {
+			try {
+				let response = await fetch(url);
+				let data = await response.json();
+				this.filmTitle.push(data.title);
+			} catch (error) {
+				alert(error);
+			}
+		},
+
+		async getVehiclesNames(url) {
+			try {
+				let response = await fetch(url);
+				let data = await response.json();
+				this.vehicles.push(data.name);
+			} catch (error) {
+				alert(error);
+			}
+		},
+
+		async getStarshipsNames(url) {
+			try {
+				let response = await fetch(url);
+				let data = await response.json();
+				this.starships.push(data.name);
+			} catch (error) {
+				alert(error);
+			}
+		},
+
 		getInfoFromApi(url) {
 			let info = this.requestApi(url);
 			return info;
 		},
 
-		requestApi(url) {
-			const xhr = new XMLHttpRequest();
-			xhr.open("GET", url, false);
-			xhr.send();
-			if (xhr.status != 200) {
-				console.log(xhr.status + ": " + xhr.statusText);
-			} else {
-				let data = JSON.parse(xhr.responseText);
+		async requestApi(url) {
+			try {
+				let response = await fetch(url);
+				let data = await response.json();
 				return data;
+			} catch (error) {
+				alert(error);
+			}
+		},
+
+		async requestFirstApi(url) {
+			try {
+				let response = await fetch(url);
+				let data = await response.json();
+				this.list = data;
+				return data;
+			} catch (error) {
+				alert(error);
 			}
 		},
 	},
 
-	created() {
-		const apiList = this.requestApi("https://swapi.dev/api/people/1/");
+	beforeMount() {
+		const apiList = this.requestFirstApi("https://swapi.dev/api/people/1/");
 		this.list = apiList;
 	},
 };
 </script>
 
 <style>
+.hidden {
+	display: none;
+}
 .api-info {
 	width: 100%;
 	min-height: 100vh;
