@@ -660,6 +660,11 @@ export default {
 	position: relative;
 }
 
+.test-intro-final__button:hover {
+	cursor: pointer;
+	opacity: .8;
+}
+
 .test-intro-final {
 	width: 100%;
 
