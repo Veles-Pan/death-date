@@ -460,7 +460,10 @@ export default {
 	font-size: 20px;
 
 	margin-top: 35px;
+
+	-moz-appearance: textfield;
 }
+
 
 .test__number {
 	font-weight: 300;
