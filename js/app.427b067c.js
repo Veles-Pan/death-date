@@ -86,10 +86,7 @@
 	0: function(t, e, s) {
 		t.exports = s("56d7");
 	},
-	2109: function(t, e, s) {
-		"use strict";
-		s("adc6");
-	},
+	"37d1": function(t, e, s) {},
 	"44c1": function(t, e, s) {},
 	"56d7": function(t, e, s) {
 		"use strict";
@@ -145,17 +142,17 @@
 				-1
 			),
 			d = Object(n["f"])(" Да "),
-			j = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
-			O = Object(n["f"])(" Нет "),
 			p = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
-			h = Object(n["g"])(
+			h = Object(n["f"])(" Нет "),
+			j = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
+			O = Object(n["g"])(
 				"div",
 				{ class: "intro__subtitle" },
 				"Онлайн предсказание",
 				-1
 			),
-			f = { key: 1, class: "quote" },
-			g = Object(n["g"])(
+			g = { key: 1, class: "quote" },
+			f = Object(n["g"])(
 				"img",
 				{
 					src: "https://i.imgur.com/bzEfLLr.png",
@@ -263,7 +260,7 @@
 														);
 													}),
 											},
-											[d, j]
+											[d, p]
 										),
 										Object(n["g"])(
 											"button",
@@ -277,13 +274,13 @@
 														);
 													}),
 											},
-											[O, p]
+											[h, j]
 										),
-										h,
+										O,
 								  ])),
 							D.isTestStarted
 								? Object(n["d"])("", !0)
-								: (Object(n["h"])(), Object(n["c"])("article", f, [g, _])),
+								: (Object(n["h"])(), Object(n["c"])("article", g, [f, _])),
 							D.isTestStarted
 								? Object(n["d"])("", !0)
 								: (Object(n["h"])(), Object(n["c"])("article", m, [v, y])),
@@ -404,12 +401,12 @@
 			ut = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
 			bt = Object(n["f"])(" Нет "),
 			dt = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
-			jt = Object(n["f"])(" Иногда "),
-			Ot = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
-			pt = Object(n["g"])("p", { class: "test__number" }, "Вопрос 4-5", -1),
-			ht = { key: 5, class: "test" },
-			ft = { class: "test-intro" },
-			gt = { class: "message-box" },
+			pt = Object(n["f"])(" Иногда "),
+			ht = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
+			jt = Object(n["g"])("p", { class: "test__number" }, "Вопрос 4-5", -1),
+			Ot = { key: 5, class: "test" },
+			gt = { class: "test-intro" },
+			ft = { class: "message-box" },
 			_t = { class: "message-box__rectangle" },
 			mt = { key: 0, class: "test-intro__text test-intro__text_black" },
 			vt = { key: 1, class: "test-intro__text test-intro__text_black" },
@@ -727,16 +724,16 @@
 													);
 												}),
 										},
-										[jt, Ot]
+										[pt, ht]
 									),
-									pt,
+									jt,
 							  ]))
 							: Object(n["d"])("", !0),
 						i.isFifthQuestionShown
 							? (Object(n["h"])(),
-							  Object(n["c"])("div", ht, [
-									Object(n["g"])("div", ft, [
-										Object(n["g"])("div", gt, [
+							  Object(n["c"])("div", Ot, [
+									Object(n["g"])("div", gt, [
+										Object(n["g"])("div", ft, [
 											Object(n["g"])("div", _t, [
 												i.currentYear - i.yearOfBorn < 36
 													? (Object(n["h"])(),
@@ -1037,6 +1034,8 @@
 		var ce = s("1da1"),
 			ie =
 				(s("96cf"),
+				s("5319"),
+				s("ac1f"),
 				s("d3b7"),
 				s("b0c0"),
 				{
@@ -1067,28 +1066,35 @@
 							var e = this;
 							return Object(ce["a"])(
 								regeneratorRuntime.mark(function s() {
-									var n, c;
+									var n, c, i;
 									return regeneratorRuntime.wrap(
 										function(s) {
 											while (1)
 												switch ((s.prev = s.next)) {
 													case 0:
-														return (s.prev = 0), (s.next = 3), fetch(t);
-													case 3:
-														return (n = s.sent), (s.next = 6), n.json();
-													case 6:
-														(c = s.sent), (e.homeworld = c.name), (s.next = 13);
+														return (
+															(n = t.replace("http://", "https://")),
+															(s.prev = 1),
+															(s.next = 4),
+															fetch(n)
+														);
+													case 4:
+														return (c = s.sent), (s.next = 7), c.json();
+													case 7:
+														(i = s.sent), (e.homeworld = i.name), (s.next = 14);
 														break;
-													case 10:
-														(s.prev = 10), (s.t0 = s["catch"](0)), alert(s.t0);
-													case 13:
+													case 11:
+														(s.prev = 11),
+															(s.t0 = s["catch"](1)),
+															console.log(s.t0);
+													case 14:
 													case "end":
 														return s.stop();
 												}
 										},
 										s,
 										null,
-										[[0, 10]]
+										[[1, 11]]
 									);
 								})
 							)();
@@ -1097,30 +1103,37 @@
 							var e = this;
 							return Object(ce["a"])(
 								regeneratorRuntime.mark(function s() {
-									var n, c;
+									var n, c, i;
 									return regeneratorRuntime.wrap(
 										function(s) {
 											while (1)
 												switch ((s.prev = s.next)) {
 													case 0:
-														return (s.prev = 0), (s.next = 3), fetch(t);
-													case 3:
-														return (n = s.sent), (s.next = 6), n.json();
-													case 6:
-														(c = s.sent),
-															e.filmTitle.push(c.title),
-															(s.next = 13);
+														return (
+															(n = t.replace("http://", "https://")),
+															(s.prev = 1),
+															(s.next = 4),
+															fetch(n)
+														);
+													case 4:
+														return (c = s.sent), (s.next = 7), c.json();
+													case 7:
+														(i = s.sent),
+															e.filmTitle.push(i.title),
+															(s.next = 14);
 														break;
-													case 10:
-														(s.prev = 10), (s.t0 = s["catch"](0)), alert(s.t0);
-													case 13:
+													case 11:
+														(s.prev = 11),
+															(s.t0 = s["catch"](1)),
+															console.log(s.t0);
+													case 14:
 													case "end":
 														return s.stop();
 												}
 										},
 										s,
 										null,
-										[[0, 10]]
+										[[1, 11]]
 									);
 								})
 							)();
@@ -1129,30 +1142,37 @@
 							var e = this;
 							return Object(ce["a"])(
 								regeneratorRuntime.mark(function s() {
-									var n, c;
+									var n, c, i;
 									return regeneratorRuntime.wrap(
 										function(s) {
 											while (1)
 												switch ((s.prev = s.next)) {
 													case 0:
-														return (s.prev = 0), (s.next = 3), fetch(t);
-													case 3:
-														return (n = s.sent), (s.next = 6), n.json();
-													case 6:
-														(c = s.sent),
-															e.vehicles.push(c.name),
-															(s.next = 13);
+														return (
+															(n = t.replace("http://", "https://")),
+															(s.prev = 1),
+															(s.next = 4),
+															fetch(n)
+														);
+													case 4:
+														return (c = s.sent), (s.next = 7), c.json();
+													case 7:
+														(i = s.sent),
+															e.vehicles.push(i.name),
+															(s.next = 14);
 														break;
-													case 10:
-														(s.prev = 10), (s.t0 = s["catch"](0)), alert(s.t0);
-													case 13:
+													case 11:
+														(s.prev = 11),
+															(s.t0 = s["catch"](1)),
+															console.log(s.t0);
+													case 14:
 													case "end":
 														return s.stop();
 												}
 										},
 										s,
 										null,
-										[[0, 10]]
+										[[1, 11]]
 									);
 								})
 							)();
@@ -1161,30 +1181,37 @@
 							var e = this;
 							return Object(ce["a"])(
 								regeneratorRuntime.mark(function s() {
-									var n, c;
+									var n, c, i;
 									return regeneratorRuntime.wrap(
 										function(s) {
 											while (1)
 												switch ((s.prev = s.next)) {
 													case 0:
-														return (s.prev = 0), (s.next = 3), fetch(t);
-													case 3:
-														return (n = s.sent), (s.next = 6), n.json();
-													case 6:
-														(c = s.sent),
-															e.starships.push(c.name),
-															(s.next = 13);
+														return (
+															(n = t.replace("http://", "https://")),
+															(s.prev = 1),
+															(s.next = 4),
+															fetch(n)
+														);
+													case 4:
+														return (c = s.sent), (s.next = 7), c.json();
+													case 7:
+														(i = s.sent),
+															e.starships.push(i.name),
+															(s.next = 14);
 														break;
-													case 10:
-														(s.prev = 10), (s.t0 = s["catch"](0)), alert(s.t0);
-													case 13:
+													case 11:
+														(s.prev = 11),
+															(s.t0 = s["catch"](1)),
+															console.log(s.t0);
+													case 14:
 													case "end":
 														return s.stop();
 												}
 										},
 										s,
 										null,
-										[[0, 10]]
+										[[1, 11]]
 									);
 								})
 							)();
@@ -1208,7 +1235,9 @@
 													case 6:
 														return (n = e.sent), e.abrupt("return", n);
 													case 10:
-														(e.prev = 10), (e.t0 = e["catch"](0)), alert(e.t0);
+														(e.prev = 10),
+															(e.t0 = e["catch"](0)),
+															console.log(e.t0);
 													case 13:
 													case "end":
 														return e.stop();
@@ -1239,7 +1268,9 @@
 															(c = s.sent), (e.list = c), s.abrupt("return", c)
 														);
 													case 11:
-														(s.prev = 11), (s.t0 = s["catch"](0)), alert(s.t0);
+														(s.prev = 11),
+															(s.t0 = s["catch"](0)),
+															console.log(s.t0);
 													case 14:
 													case "end":
 														return s.stop();
@@ -1258,7 +1289,7 @@
 						this.list = t;
 					},
 				});
-		s("999f");
+		s("b92b");
 		ie.render = ne;
 		var ae = ie,
 			re = {
@@ -1344,7 +1375,7 @@
 					},
 				},
 			};
-		s("2109");
+		s("7cb4");
 		re.render = Yt;
 		var oe = re,
 			le = {
@@ -1378,20 +1409,23 @@
 		var ue = le;
 		Object(n["b"])(ue).mount("#app");
 	},
+	"5e66": function(t, e, s) {},
 	"76a5": function(t, e, s) {
 		"use strict";
 		s("44c1");
+	},
+	"7cb4": function(t, e, s) {
+		"use strict";
+		s("37d1");
 	},
 	"7e5d": function(t, e, s) {
 		"use strict";
 		s("c04a");
 	},
-	"999f": function(t, e, s) {
+	b92b: function(t, e, s) {
 		"use strict";
-		s("b2fb");
+		s("5e66");
 	},
-	adc6: function(t, e, s) {},
-	b2fb: function(t, e, s) {},
 	c04a: function(t, e, s) {},
 });
-//# sourceMappingURL=app.47af0aea.js.map
+//# sourceMappingURL=app.c62a14f4.js.map
