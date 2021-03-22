@@ -5,3 +5,13 @@
 [Ссылка на сайт](https://veles-pan.github.io/death-date/)
 
 [Ссылка на Vue файлы](https://github.com/Veles-Pan/death-date/tree/Vue-code)
+
+Чтобы запустить локально:
+
+```
+npm install
+```
+и
+```
+npm run serve
+```
