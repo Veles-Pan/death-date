@@ -178,6 +178,10 @@
 	color: #fff;
 	position: relative;
 }
+.test__button:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
 .test__button:disabled {
 	background: #616161;
 }
