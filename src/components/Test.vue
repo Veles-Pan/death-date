@@ -64,6 +64,7 @@
 				@input="hasValidDay"
 				required
 			/>
+			<img src="../assets/arrow.svg" class="arrow_day">
 			<input
 				class="test__input"
 				type="number"
@@ -76,6 +77,7 @@
 				@input="hasValidMounth"
 				required
 			/>
+			<img src="../assets/arrow.svg" class="arrow_mounth">
 			<input
 				class="test__input"
 				type="number"
@@ -88,6 +90,7 @@
 				@input="hasValidYear"
 				required
 			/>
+			<img src="../assets/arrow.svg" class="arrow_year">
 			<button
 				type="button"
 				class="test__button"
@@ -396,6 +399,11 @@ export default {
 	position: relative;
 }
 
+.intro__button:hover {
+	cursor: pointer;
+	opacity: .8;
+}
+
 .test__button:disabled {
 	background: rgb(97, 97, 97);
 }
@@ -493,6 +501,7 @@ export default {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 }
 
 #floatingBars {
@@ -587,7 +596,6 @@ export default {
 	font-weight: 300;
 	font-size: 25px;
 	line-height: 1.4;
-	/* or 140% */
 
 	text-align: center;
 
@@ -606,7 +614,6 @@ export default {
 	max-width: 480px;
 	font-size: 25px;
 	line-height: 1.4;
-	/* or 140% */
 
 	text-align: center;
 
@@ -683,6 +690,27 @@ export default {
 	position: absolute;
 	top: 0px;
 	left: -15px;
+}
+
+.arrow_day {
+	position: absolute;
+	top: 68px;
+	right: 20px;
+	width: 16px;
+}
+
+.arrow_mounth {
+	position: absolute;
+	top: 175px;
+	right: 20px;
+	width: 16px;
+}
+
+.arrow_year {
+	position: absolute;
+	top: 283px;
+	right: 20px;
+	width: 16px;
 }
 
 @media screen and (max-width: 670px) {
@@ -858,5 +886,23 @@ export default {
 		width: 116px;
 		height: 48px;
 	}
+
+	.arrow_day {
+	top: 30px;
+	right: 15px;
+	width: 13px;
+}
+
+.arrow_mounth {
+	top: 83px;
+	right: 15px;
+	width: 13px;
+}
+
+.arrow_year {
+	top: 134px;
+	right: 15px;
+	width: 13px;
+}
 }
 </style>
