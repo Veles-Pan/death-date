@@ -235,12 +235,6 @@
 	color: hsla(0, 0%, 100%, 0.6);
 	margin: 13vh 0 15px;
 }
-.test__input::-moz-placeholder {
-	font-size: 20px;
-	line-height: 23px;
-	text-align: center;
-	color: #202024;
-}
 .test__input:-ms-input-placeholder {
 	font-size: 20px;
 	line-height: 23px;
@@ -248,6 +242,13 @@
 	color: #202024;
 }
 .test__input::placeholder {
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	color: #202024;
+}
+.test__input::-moz-placeholder {
+	opacity: 1;
 	font-size: 20px;
 	line-height: 23px;
 	text-align: center;
