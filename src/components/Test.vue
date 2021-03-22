@@ -890,19 +890,19 @@ export default {
 	.arrow_day {
 	top: 30px;
 	right: 15px;
-	width: 13px;
+	width: 15px;
 }
 
 .arrow_mounth {
-	top: 83px;
+	top: 82px;
 	right: 15px;
-	width: 13px;
+	width: 15px;
 }
 
 .arrow_year {
 	top: 134px;
 	right: 15px;
-	width: 13px;
+	width: 15px;
 }
 }
 </style>
