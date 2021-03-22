@@ -11,7 +11,7 @@
 ```
 npm install
 ```
-и
+
 ```
 npm run serve
 ```
