@@ -388,6 +388,10 @@
 	margin: 0;
 	position: relative;
 }
+.test-intro-final__button:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
 .test-intro-final {
 	width: 100%;
 	margin-bottom: 30px;
