@@ -178,6 +178,10 @@
 	color: #fff;
 	position: relative;
 }
+.test__button:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
 .test__button:disabled {
 	background: #616161;
 }
@@ -652,6 +656,10 @@
 	font-size: 20px;
 	line-height: 1.15;
 	position: relative;
+}
+.intro__button:hover {
+	cursor: pointer;
+	opacity: 0.8;
 }
 .sparcle {
 	width: 151.03px;
