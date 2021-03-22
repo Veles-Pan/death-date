@@ -1,38 +1,38 @@
 (function(t) {
 	function e(e) {
 		for (
-			var n, a, o = e[0], l = e[1], r = e[2], u = 0, d = [];
-			u < o.length;
-			u++
+			var c, a, o = e[0], l = e[1], r = e[2], b = 0, d = [];
+			b < o.length;
+			b++
 		)
-			(a = o[u]),
-				Object.prototype.hasOwnProperty.call(c, a) && c[a] && d.push(c[a][0]),
-				(c[a] = 0);
-		for (n in l) Object.prototype.hasOwnProperty.call(l, n) && (t[n] = l[n]);
-		b && b(e);
+			(a = o[b]),
+				Object.prototype.hasOwnProperty.call(i, a) && i[a] && d.push(i[a][0]),
+				(i[a] = 0);
+		for (c in l) Object.prototype.hasOwnProperty.call(l, c) && (t[c] = l[c]);
+		u && u(e);
 		while (d.length) d.shift()();
-		return i.push.apply(i, r || []), s();
+		return n.push.apply(n, r || []), s();
 	}
 	function s() {
-		for (var t, e = 0; e < i.length; e++) {
-			for (var s = i[e], n = !0, o = 1; o < s.length; o++) {
+		for (var t, e = 0; e < n.length; e++) {
+			for (var s = n[e], c = !0, o = 1; o < s.length; o++) {
 				var l = s[o];
-				0 !== c[l] && (n = !1);
+				0 !== i[l] && (c = !1);
 			}
-			n && (i.splice(e--, 1), (t = a((a.s = s[0]))));
+			c && (n.splice(e--, 1), (t = a((a.s = s[0]))));
 		}
 		return t;
 	}
-	var n = {},
-		c = { app: 0 },
-		i = [];
+	var c = {},
+		i = { app: 0 },
+		n = [];
 	function a(e) {
-		if (n[e]) return n[e].exports;
-		var s = (n[e] = { i: e, l: !1, exports: {} });
+		if (c[e]) return c[e].exports;
+		var s = (c[e] = { i: e, l: !1, exports: {} });
 		return t[e].call(s.exports, s, s.exports, a), (s.l = !0), s.exports;
 	}
 	(a.m = t),
-		(a.c = n),
+		(a.c = c),
 		(a.d = function(t, e, s) {
 			a.o(t, e) || Object.defineProperty(t, e, { enumerable: !0, get: s });
 		}),
@@ -51,13 +51,13 @@
 				Object.defineProperty(s, "default", { enumerable: !0, value: t }),
 				2 & e && "string" != typeof t)
 			)
-				for (var n in t)
+				for (var c in t)
 					a.d(
 						s,
-						n,
+						c,
 						function(e) {
 							return t[e];
-						}.bind(null, n)
+						}.bind(null, c)
 					);
 			return s;
 		}),
@@ -80,67 +80,66 @@
 		l = o.push.bind(o);
 	(o.push = e), (o = o.slice());
 	for (var r = 0; r < o.length; r++) e(o[r]);
-	var b = l;
-	i.push([0, "chunk-vendors"]), s();
+	var u = l;
+	n.push([0, "chunk-vendors"]), s();
 })({
 	0: function(t, e, s) {
 		t.exports = s("56d7");
 	},
-	"43f6": function(t, e, s) {},
-	"44cd": function(t, e, s) {
+	"4fb9": function(t, e, s) {
 		"use strict";
-		s("43f6");
+		s("a693");
 	},
 	"56d7": function(t, e, s) {
 		"use strict";
 		s.r(e);
 		s("e260"), s("e6cf"), s("cca6"), s("a79d");
-		var n = s("7a23"),
-			c = s("9ae1"),
-			i = s.n(c),
-			a = s("ed29"),
+		var c = s("7a23"),
+			i = s("e7de"),
+			n = s.n(i),
+			a = s("67f2"),
 			o = s.n(a),
-			l = s("961b"),
-			r = s.n(l),
-			b = s("8db7"),
-			u = s.n(b),
-			d = s("e7de"),
-			O = s.n(d),
-			j = s("67f2"),
-			f = s.n(j),
-			p = { key: 0, class: "header" },
-			g = Object(n["g"])(
+			l = { key: 0, class: "header" },
+			r = Object(c["g"])(
 				"p",
 				{ class: "header__title" },
 				"Лучшие астрологи и экстрасенсы Румынии",
 				-1
 			),
-			h = Object(n["g"])(
+			u = Object(c["g"])(
 				"p",
 				{ class: "header__subtitle" },
 				"Точность прогноза: 97%",
 				-1
 			),
-			_ = { class: "content" },
-			v = { key: 0, class: "intro" },
-			m = Object(n["g"])(
+			b = { class: "content" },
+			d = { key: 0, class: "intro" },
+			O = Object(c["g"])(
 				"img",
-				{ src: i.a, alt: "интро", class: "intro__image" },
+				{
+					src: "https://i.imgur.com/YgN3YkS.png",
+					alt: "интро",
+					class: "intro__image",
+				},
 				null,
 				-1
 			),
-			y = Object(n["g"])(
+			j = Object(c["g"])(
 				"img",
-				{ src: o.a, alt: "глаз", class: "intro__subimage" },
+				{
+					src: "https://i.imgur.com/SHmgT9G.png",
+					alt: "глаз",
+					class: "intro__subimage",
+				},
 				null,
 				-1
 			),
-			k = Object(n["g"])(
+			f = Object(c["g"])(
 				"p",
 				{ class: "intro__text" },
 				[
-					Object(n["f"])(" Вас беспокоит вопрос о том, "),
-					Object(n["g"])(
+					Object(c["f"])(" Вас беспокоит вопрос о том, "),
+					Object(c["g"])(
 						"span",
 						{ class: "uppercase" },
 						"когда Вы покинете этот Мир и при каких обстоятельствах?"
@@ -148,53 +147,57 @@
 				],
 				-1
 			),
-			x = Object(n["f"])(" Да "),
-			T = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
-			S = Object(n["g"])(
+			p = Object(c["f"])(" Да "),
+			g = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			h = Object(c["g"])(
 				"button",
 				{ class: "intro__button intro__button_reject" },
 				[
-					Object(n["f"])(" Нет "),
-					Object(n["g"])("div", { class: "sparcle moving" }),
+					Object(c["f"])(" Нет "),
+					Object(c["g"])("div", { class: "sparcle moving" }),
 				],
 				-1
 			),
-			w = Object(n["g"])(
+			_ = Object(c["g"])(
 				"div",
 				{ class: "intro__subtitle" },
 				"Онлайн предсказание",
 				-1
 			),
-			D = { key: 1, class: "quote" },
-			Q = Object(n["g"])(
+			v = { key: 1, class: "quote" },
+			m = Object(c["g"])(
 				"img",
-				{ src: r.a, alt: "цитата", class: "quote__image" },
+				{
+					src: "https://i.imgur.com/bzEfLLr.png",
+					alt: "цитата",
+					class: "quote__image",
+				},
 				null,
 				-1
 			),
-			F = Object(n["g"])(
+			y = Object(c["g"])(
 				"p",
 				{ class: "quote__text" },
 				[
-					Object(n["f"])(" Позвольте нам раскрыть эту волнующую тайну и "),
-					Object(n["g"])(
+					Object(c["f"])(" Позвольте нам раскрыть эту волнующую тайну и "),
+					Object(c["g"])(
 						"span",
 						{ class: "colored-text" },
 						"с точностью определить дату и время вашей смерти,"
 					),
-					Object(n["f"])(" а также предшествующую этому событию причину "),
+					Object(c["f"])(" а также предшествующую этому событию причину "),
 				],
 				-1
 			),
-			I = { key: 2, class: "cover" },
-			G = Object(n["g"])(
+			k = { key: 2, class: "cover" },
+			x = Object(c["g"])(
 				"p",
 				{ class: "cover__text" },
 				[
-					Object(n["f"])(
+					Object(c["f"])(
 						" Многие не верят предсказаниям и мы решили доказать каждому, "
 					),
-					Object(n["g"])(
+					Object(c["g"])(
 						"span",
 						{ class: "colored-text" },
 						"что прогноз может изменить жизнь любого человека!"
@@ -202,51 +205,55 @@
 				],
 				-1
 			),
-			C = Object(n["g"])(
+			T = Object(c["g"])(
 				"img",
-				{ src: u.a, alt: "женщина", class: "cover__image" },
+				{
+					src: "https://i.imgur.com/00GFHMJ.jpg",
+					alt: "женщина",
+					class: "cover__image",
+				},
 				null,
 				-1
 			),
-			L = { key: 1, class: "footer" },
-			V = Object(n["g"])(
+			S = { key: 1, class: "footer" },
+			w = Object(c["g"])(
 				"img",
-				{ class: "footer__image", src: O.a, alt: "руны" },
+				{ class: "footer__image", src: n.a, alt: "руны" },
 				null,
 				-1
 			),
-			A = Object(n["g"])(
+			D = Object(c["g"])(
 				"p",
 				{ class: "footer__text" },
 				" Вы, конечно, умрете. И все, с кем вы знакомы, тоже однажды умрут. ",
 				-1
 			),
-			B = Object(n["g"])(
+			F = Object(c["g"])(
 				"img",
-				{ class: "footer__image", src: f.a, alt: "руны" },
+				{ class: "footer__image", src: o.a, alt: "руны" },
 				null,
 				-1
 			);
-		function q(t, e, s, c, i, a) {
-			var o = Object(n["j"])("Test");
+		function Q(t, e, s, i, n, a) {
+			var o = Object(c["j"])("Test");
 			return (
-				Object(n["h"])(),
-				Object(n["c"])(
-					n["a"],
+				Object(c["h"])(),
+				Object(c["c"])(
+					c["a"],
 					null,
 					[
-						i.isTestStarted
-							? Object(n["d"])("", !0)
-							: (Object(n["h"])(), Object(n["c"])("header", p, [g, h])),
-						Object(n["g"])("main", _, [
-							i.isTestStarted
-								? Object(n["d"])("", !0)
-								: (Object(n["h"])(),
-								  Object(n["c"])("article", v, [
-										m,
-										y,
-										k,
-										Object(n["g"])(
+						n.isTestStarted
+							? Object(c["d"])("", !0)
+							: (Object(c["h"])(), Object(c["c"])("header", l, [r, u])),
+						Object(c["g"])("main", b, [
+							n.isTestStarted
+								? Object(c["d"])("", !0)
+								: (Object(c["h"])(),
+								  Object(c["c"])("article", d, [
+										O,
+										j,
+										f,
+										Object(c["g"])(
 											"button",
 											{
 												class: "intro__button intro__button_accept",
@@ -258,52 +265,52 @@
 														);
 													}),
 											},
-											[x, T]
+											[p, g]
 										),
-										S,
-										w,
+										h,
+										_,
 								  ])),
-							i.isTestStarted
-								? Object(n["d"])("", !0)
-								: (Object(n["h"])(), Object(n["c"])("article", D, [Q, F])),
-							i.isTestStarted
-								? Object(n["d"])("", !0)
-								: (Object(n["h"])(), Object(n["c"])("article", I, [G, C])),
-							Object(n["g"])(o),
+							n.isTestStarted
+								? Object(c["d"])("", !0)
+								: (Object(c["h"])(), Object(c["c"])("article", v, [m, y])),
+							n.isTestStarted
+								? Object(c["d"])("", !0)
+								: (Object(c["h"])(), Object(c["c"])("article", k, [x, T])),
+							Object(c["g"])(o),
 						]),
-						i.isTestStarted
-							? Object(n["d"])("", !0)
-							: (Object(n["h"])(), Object(n["c"])("footer", L, [V, A, B])),
+						n.isTestStarted
+							? Object(c["d"])("", !0)
+							: (Object(c["h"])(), Object(c["c"])("footer", S, [w, D, F])),
 					],
 					64
 				)
 			);
 		}
-		var M = { key: 0, class: "test test_margin" },
-			Y = Object(n["g"])(
+		var I = { key: 0, class: "test test_margin" },
+			G = Object(c["g"])(
 				"p",
 				{ class: "test__text" },
 				"Боитесь ли вы умереть?",
 				-1
 			),
-			E = Object(n["f"])(" Да "),
-			N = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
-			P = Object(n["g"])(
+			C = Object(c["f"])(" Да "),
+			L = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			V = Object(c["g"])(
 				"button",
 				{ class: "test__button" },
 				[
-					Object(n["f"])(" Нет "),
-					Object(n["g"])("div", { class: "sparcle moving" }),
+					Object(c["f"])(" Нет "),
+					Object(c["g"])("div", { class: "sparcle moving" }),
 				],
 				-1
 			),
-			R = Object(n["g"])("p", { class: "test__number" }, "Вопрос 1-5", -1),
-			J = { key: 1, class: "test" },
-			U = Object(n["g"])(
+			A = Object(c["g"])("p", { class: "test__number" }, "Вопрос 1-5", -1),
+			B = { key: 1, class: "test" },
+			Y = Object(c["g"])(
 				"div",
 				{ class: "test-intro" },
 				[
-					Object(n["g"])(
+					Object(c["g"])(
 						"p",
 						{ class: "test-intro__text" },
 						" Мы расскажем Вам не только подробности вашей смерти, но также поможем Вам избежать этой ужасной даты и продлить вашу жизнь на многие годы. "
@@ -311,28 +318,28 @@
 				],
 				-1
 			),
-			H = { class: "test__content" },
-			X = Object(n["g"])(
+			q = { class: "test__content" },
+			M = Object(c["g"])(
 				"p",
 				{ class: "test__text" },
 				" Когда Вы чувствуете себя наиболее комфортно? ",
 				-1
 			),
-			$ = Object(n["f"])(" Утро "),
-			z = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
-			K = Object(n["f"])(" День "),
-			W = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
-			Z = Object(n["f"])(" Вечер "),
-			tt = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
-			et = Object(n["f"])(" Ночь "),
-			st = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
-			nt = Object(n["g"])("p", { class: "test__number" }, "Вопрос 2-5", -1),
-			ct = { key: 2, class: "test" },
-			it = Object(n["g"])(
+			E = Object(c["f"])(" Утро "),
+			N = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			P = Object(c["f"])(" День "),
+			R = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			J = Object(c["f"])(" Вечер "),
+			H = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			U = Object(c["f"])(" Ночь "),
+			z = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			X = Object(c["g"])("p", { class: "test__number" }, "Вопрос 2-5", -1),
+			$ = { key: 2, class: "test" },
+			K = Object(c["g"])(
 				"div",
 				{ class: "test-intro" },
 				[
-					Object(n["g"])(
+					Object(c["g"])(
 						"p",
 						{ class: "test-intro__text" },
 						" Уже совсем скоро Вы узнаете много интересного о своем будущем! "
@@ -340,24 +347,24 @@
 				],
 				-1
 			),
-			at = Object(n["g"])(
+			W = Object(c["g"])(
 				"p",
 				{ class: "test__text" },
 				"Укажите свою дату рождения",
 				-1
 			),
-			ot = { class: "test__form", novalidate: "" },
-			lt = Object(n["f"])(" Далее "),
-			rt = { key: 0, class: "sparcle moving" },
-			bt = Object(n["g"])("p", { class: "test__number" }, "Вопрос 3-5", -1),
-			ut = { key: 3, class: "load", id: "floatingBars" },
-			dt = Object(n["g"])("p", { class: "load__text" }, "Loading", -1),
-			Ot = { key: 4, class: "test" },
-			jt = Object(n["g"])(
+			Z = { class: "test__form", novalidate: "" },
+			tt = Object(c["f"])(" Далее "),
+			et = { key: 0, class: "sparcle moving" },
+			st = Object(c["g"])("p", { class: "test__number" }, "Вопрос 3-5", -1),
+			ct = { key: 3, class: "load", id: "floatingBars" },
+			it = Object(c["g"])("p", { class: "load__text" }, "Loading", -1),
+			nt = { key: 4, class: "test" },
+			at = Object(c["g"])(
 				"div",
 				{ class: "test-intro" },
 				[
-					Object(n["g"])(
+					Object(c["g"])(
 						"p",
 						{ class: "test-intro__text" },
 						" Смерть родного человека — одно из тяжелейших испытаний в жизни каждого из нас! "
@@ -365,76 +372,76 @@
 				],
 				-1
 			),
-			ft = Object(n["g"])(
+			ot = Object(c["g"])(
 				"p",
 				{ class: "test__text" },
 				"Снятся ли Вам умершие люди?",
 				-1
 			),
-			pt = Object(n["f"])(" Да "),
-			gt = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
-			ht = Object(n["f"])(" Нет "),
-			_t = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
-			vt = Object(n["f"])(" Иногда "),
-			mt = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
-			yt = Object(n["g"])("p", { class: "test__number" }, "Вопрос 4-5", -1),
-			kt = { key: 5, class: "test" },
-			xt = { class: "test-intro" },
-			Tt = { class: "message-box" },
-			St = { class: "message-box__rectangle" },
-			wt = { key: 0, class: "test-intro__text test-intro__text_black" },
-			Dt = { key: 1, class: "test-intro__text test-intro__text_black" },
-			Qt = { key: 2, class: "test-intro__text test-intro__text_black" },
-			Ft = Object(n["g"])("div", { class: "message-box__polygon" }, null, -1),
-			It = Object(n["g"])(
+			lt = Object(c["f"])(" Да "),
+			rt = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			ut = Object(c["f"])(" Нет "),
+			bt = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			dt = Object(c["f"])(" Иногда "),
+			Ot = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			jt = Object(c["g"])("p", { class: "test__number" }, "Вопрос 4-5", -1),
+			ft = { key: 5, class: "test" },
+			pt = { class: "test-intro" },
+			gt = { class: "message-box" },
+			ht = { class: "message-box__rectangle" },
+			_t = { key: 0, class: "test-intro__text test-intro__text_black" },
+			vt = { key: 1, class: "test-intro__text test-intro__text_black" },
+			mt = { key: 2, class: "test-intro__text test-intro__text_black" },
+			yt = Object(c["g"])("div", { class: "message-box__polygon" }, null, -1),
+			kt = Object(c["g"])(
 				"p",
 				{ class: "test__text" },
 				" Запись, которую Вы услышите, может шокировать людей с неокрепшей психикой. Вы готовы узнать, что ждет именно Вас? ",
 				-1
 			),
-			Gt = Object(n["f"])(" Да "),
-			Ct = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
-			Lt = Object(n["f"])(" Затрудняюсь ответить "),
-			Vt = Object(n["g"])("div", { class: "sparcle moving" }, null, -1),
-			At = Object(n["g"])("p", { class: "test__number" }, "Вопрос 5-5", -1),
-			Bt = { key: 6, class: "test-intro-final" },
-			qt = Object(n["e"])(
+			xt = Object(c["f"])(" Да "),
+			Tt = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			St = Object(c["f"])(" Затрудняюсь ответить "),
+			wt = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			Dt = Object(c["g"])("p", { class: "test__number" }, "Вопрос 5-5", -1),
+			Ft = { key: 6, class: "test-intro-final" },
+			Qt = Object(c["e"])(
 				'<div class="message-box message-box_final"><div class="message-box__rectangle message-box__rectangle_final"><p class="test-intro-final__title"> Спасибо за Ваши ответы! <strong>Мы подготовили для Вас персональную аудио запись с Вашим прогнозом.</strong></p></div><div class="message-box__polygon message-box__polygon_final"></div></div><p class="test-intro-final__text"> Вы можете узнать, как повлиять на события, которые ожидают вас в ближайшем будущем. </p>',
 				2
 			),
-			Mt = { class: "test-intro-final__info" },
-			Yt = { class: "uppercase strong" },
-			Et = Object(n["f"])(
+			It = { class: "test-intro-final__info" },
+			Gt = { class: "uppercase strong" },
+			Ct = Object(c["f"])(
 				" Вам надо быть готовым, чтобы последствия не оказались необратимыми. "
 			),
-			Nt = Object(n["g"])(
+			Lt = Object(c["g"])(
 				"p",
 				{ class: "test-intro-final__text test-intro-final__text_buttom" },
 				" Нажмите на кнопку ниже прямо сейчас и наберите наш номер телефона. Прослушайте важную информацию! ",
 				-1
 			),
-			Pt = Object(n["f"])(" Позвонить и прослушать "),
-			Rt = Object(n["g"])("div", { class: "sparcle_big moving" }, null, -1),
-			Jt = Object(n["g"])(
+			Vt = Object(c["f"])(" Позвонить и прослушать "),
+			At = Object(c["g"])("div", { class: "sparcle_big moving" }, null, -1),
+			Bt = Object(c["g"])(
 				"p",
 				{ class: "test-intro-final__footer-text" },
 				" TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN FOLOSIREA LUI DECLARATI CA AVETI 18 ANI IMPLINITI, ",
 				-1
 			);
-		function Ut(t, e, s, c, i, a) {
-			var o = Object(n["j"])("LoadList"),
-				l = Object(n["j"])("ApiInfo");
+		function Yt(t, e, s, i, n, a) {
+			var o = Object(c["j"])("LoadList"),
+				l = Object(c["j"])("ApiInfo");
 			return (
-				Object(n["h"])(),
-				Object(n["c"])(
-					n["a"],
+				Object(c["h"])(),
+				Object(c["c"])(
+					c["a"],
 					null,
 					[
-						i.isFirstQuestionShown
-							? (Object(n["h"])(),
-							  Object(n["c"])("div", M, [
-									Y,
-									Object(n["g"])(
+						n.isFirstQuestionShown
+							? (Object(c["h"])(),
+							  Object(c["c"])("div", I, [
+									G,
+									Object(c["g"])(
 										"button",
 										{
 											class: "test__button",
@@ -444,19 +451,19 @@
 													return a.startTest && a.startTest.apply(a, arguments);
 												}),
 										},
-										[E, N]
+										[C, L]
 									),
-									P,
-									R,
+									V,
+									A,
 							  ]))
-							: Object(n["d"])("", !0),
-						i.isSecondQuestionShown
-							? (Object(n["h"])(),
-							  Object(n["c"])("div", J, [
-									U,
-									Object(n["g"])("div", H, [
-										X,
-										Object(n["g"])(
+							: Object(c["d"])("", !0),
+						n.isSecondQuestionShown
+							? (Object(c["h"])(),
+							  Object(c["c"])("div", B, [
+									Y,
+									Object(c["g"])("div", q, [
+										M,
+										Object(c["g"])(
 											"button",
 											{
 												class: "test__button",
@@ -469,9 +476,9 @@
 														);
 													}),
 											},
-											[$, z]
+											[E, N]
 										),
-										Object(n["g"])(
+										Object(c["g"])(
 											"button",
 											{
 												class: "test__button",
@@ -484,9 +491,9 @@
 														);
 													}),
 											},
-											[K, W]
+											[P, R]
 										),
-										Object(n["g"])(
+										Object(c["g"])(
 											"button",
 											{
 												class: "test__button",
@@ -499,9 +506,9 @@
 														);
 													}),
 											},
-											[Z, tt]
+											[J, H]
 										),
-										Object(n["g"])(
+										Object(c["g"])(
 											"button",
 											{
 												class: "test__button",
@@ -514,19 +521,19 @@
 														);
 													}),
 											},
-											[et, st]
+											[U, z]
 										),
-										nt,
+										X,
 									]),
 							  ]))
-							: Object(n["d"])("", !0),
-						i.isThirdQuestionShown
-							? (Object(n["h"])(),
-							  Object(n["c"])("div", ct, [
-									it,
-									at,
-									Object(n["g"])("form", ot, [
-										Object(n["g"])(
+							: Object(c["d"])("", !0),
+						n.isThirdQuestionShown
+							? (Object(c["h"])(),
+							  Object(c["c"])("div", $, [
+									K,
+									W,
+									Object(c["g"])("form", Z, [
+										Object(c["g"])(
 											"input",
 											{
 												class: "test__input",
@@ -537,7 +544,7 @@
 												name: "day",
 												placeholder: "День",
 												style: {
-													border: i.isDayValid ? "1px solid red" : "none",
+													border: n.isDayValid ? "1px solid red" : "none",
 												},
 												onInput:
 													e[6] ||
@@ -551,7 +558,7 @@
 											null,
 											36
 										),
-										Object(n["g"])(
+										Object(c["g"])(
 											"input",
 											{
 												class: "test__input",
@@ -562,7 +569,7 @@
 												name: "mounth",
 												placeholder: "Месяц",
 												style: {
-													border: i.isMountValid ? "1px solid red" : "none",
+													border: n.isMountValid ? "1px solid red" : "none",
 												},
 												onInput:
 													e[7] ||
@@ -577,18 +584,18 @@
 											null,
 											36
 										),
-										Object(n["g"])(
+										Object(c["g"])(
 											"input",
 											{
 												class: "test__input",
 												type: "number",
 												min: "1910",
-												max: i.currentYear - 18,
+												max: n.currentYear - 18,
 												id: "year",
 												name: "year",
 												placeholder: "Год",
 												style: {
-													border: i.isYearValid ? "1px solid red" : "none",
+													border: n.isYearValid ? "1px solid red" : "none",
 												},
 												onInput:
 													e[8] ||
@@ -604,7 +611,7 @@
 											44,
 											["max"]
 										),
-										Object(n["g"])(
+										Object(c["g"])(
 											"button",
 											{
 												type: "button",
@@ -620,28 +627,28 @@
 												disabled: a.hasDisabledButton(),
 											},
 											[
-												lt,
+												tt,
 												a.hasDisabledButton()
-													? Object(n["d"])("", !0)
-													: (Object(n["h"])(), Object(n["c"])("div", rt)),
+													? Object(c["d"])("", !0)
+													: (Object(c["h"])(), Object(c["c"])("div", et)),
 											],
 											8,
 											["disabled"]
 										),
 									]),
-									bt,
+									st,
 							  ]))
-							: Object(n["d"])("", !0),
-						i.isLoadShown
-							? (Object(n["h"])(),
-							  Object(n["c"])("div", ut, [Object(n["g"])(o), dt]))
-							: Object(n["d"])("", !0),
-						i.isFourthQuestionShown
-							? (Object(n["h"])(),
-							  Object(n["c"])("div", Ot, [
-									jt,
-									ft,
-									Object(n["g"])(
+							: Object(c["d"])("", !0),
+						n.isLoadShown
+							? (Object(c["h"])(),
+							  Object(c["c"])("div", ct, [Object(c["g"])(o), it]))
+							: Object(c["d"])("", !0),
+						n.isFourthQuestionShown
+							? (Object(c["h"])(),
+							  Object(c["c"])("div", nt, [
+									at,
+									ot,
+									Object(c["g"])(
 										"button",
 										{
 											class: "test__button",
@@ -654,9 +661,9 @@
 													);
 												}),
 										},
-										[pt, gt]
+										[lt, rt]
 									),
-									Object(n["g"])(
+									Object(c["g"])(
 										"button",
 										{
 											class: "test__button",
@@ -669,9 +676,9 @@
 													);
 												}),
 										},
-										[ht, _t]
+										[ut, bt]
 									),
-									Object(n["g"])(
+									Object(c["g"])(
 										"button",
 										{
 											class: "test__button",
@@ -684,48 +691,48 @@
 													);
 												}),
 										},
-										[vt, mt]
+										[dt, Ot]
 									),
-									yt,
+									jt,
 							  ]))
-							: Object(n["d"])("", !0),
-						i.isFifthQuestionShown
-							? (Object(n["h"])(),
-							  Object(n["c"])("div", kt, [
-									Object(n["g"])("div", xt, [
-										Object(n["g"])("div", Tt, [
-											Object(n["g"])("div", St, [
-												i.currentYear - i.yearOfBorn < 36
-													? (Object(n["h"])(),
-													  Object(n["c"])(
+							: Object(c["d"])("", !0),
+						n.isFifthQuestionShown
+							? (Object(c["h"])(),
+							  Object(c["c"])("div", ft, [
+									Object(c["g"])("div", pt, [
+										Object(c["g"])("div", gt, [
+											Object(c["g"])("div", ht, [
+												n.currentYear - n.yearOfBorn < 36
+													? (Object(c["h"])(),
+													  Object(c["c"])(
 															"p",
-															wt,
+															_t,
 															" По вам скучает очень близкий человек, которого больше нет в мире живых. "
 													  ))
-													: Object(n["d"])("", !0),
-												i.currentYear - i.yearOfBorn < 46 &&
-												i.currentYear - i.yearOfBorn > 35
-													? (Object(n["h"])(),
-													  Object(n["c"])(
+													: Object(c["d"])("", !0),
+												n.currentYear - n.yearOfBorn < 46 &&
+												n.currentYear - n.yearOfBorn > 35
+													? (Object(c["h"])(),
+													  Object(c["c"])(
 															"p",
-															Dt,
+															vt,
 															" По вам скучает очень близкий человек, которого больше нет в мире живых. Возможно это дедушка или бабушка. "
 													  ))
-													: Object(n["d"])("", !0),
-												i.currentYear - i.yearOfBorn > 46
-													? (Object(n["h"])(),
-													  Object(n["c"])(
+													: Object(c["d"])("", !0),
+												n.currentYear - n.yearOfBorn > 46
+													? (Object(c["h"])(),
+													  Object(c["c"])(
 															"p",
-															Qt,
+															mt,
 															" По вам скучает очень близкий человек, которого больше нет в мире живых. Возможно это кто-то из Ваших родителей. "
 													  ))
-													: Object(n["d"])("", !0),
+													: Object(c["d"])("", !0),
 											]),
-											Ft,
+											yt,
 										]),
 									]),
-									It,
-									Object(n["g"])(
+									kt,
+									Object(c["g"])(
 										"button",
 										{
 											class: "test__button",
@@ -737,9 +744,9 @@
 													);
 												}),
 										},
-										[Gt, Ct]
+										[xt, Tt]
 									),
-									Object(n["g"])(
+									Object(c["g"])(
 										"button",
 										{
 											class: "test__button",
@@ -751,28 +758,28 @@
 													);
 												}),
 										},
-										[Lt, Vt]
+										[St, wt]
 									),
-									At,
+									Dt,
 							  ]))
-							: Object(n["d"])("", !0),
-						i.isTestFinished
-							? (Object(n["h"])(),
-							  Object(n["c"])("div", Bt, [
-									qt,
-									Object(n["g"])("p", Mt, [
-										Object(n["g"])(
+							: Object(c["d"])("", !0),
+						n.isTestFinished
+							? (Object(c["h"])(),
+							  Object(c["c"])("div", Ft, [
+									Qt,
+									Object(c["g"])("p", It, [
+										Object(c["g"])(
 											"span",
-											Yt,
+											Gt,
 											"Первое значимое событие может произойти уже " +
-												Object(n["k"])(i.nextDay) +
+												Object(c["k"])(n.nextDay) +
 												",",
 											1
 										),
-										Et,
+										Ct,
 									]),
-									Nt,
-									Object(n["g"])(
+									Lt,
+									Object(c["g"])(
 										"button",
 										{
 											class: "test-intro-final__button",
@@ -785,66 +792,66 @@
 													);
 												}),
 										},
-										[Pt, Rt]
+										[Vt, At]
 									),
-									Jt,
+									Bt,
 							  ]))
-							: Object(n["d"])("", !0),
-						i.isCallButtonClicked
-							? (Object(n["h"])(), Object(n["c"])(l, { key: 7 }))
-							: Object(n["d"])("", !0),
+							: Object(c["d"])("", !0),
+						n.isCallButtonClicked
+							? (Object(c["h"])(), Object(c["c"])(l, { key: 7 }))
+							: Object(c["d"])("", !0),
 					],
 					64
 				)
 			);
 		}
-		var Ht = { class: "load__bar" },
-			Xt = Object(n["e"])(
+		var qt = { class: "load__bar" },
+			Mt = Object(c["e"])(
 				'<li id="rotateG_01" class="blockG"></li><li id="rotateG_02" class="blockG"></li><li id="rotateG_03" class="blockG"></li><li id="rotateG_04" class="blockG"></li><li id="rotateG_05" class="blockG"></li><li id="rotateG_06" class="blockG"></li><li id="rotateG_07" class="blockG"></li><li id="rotateG_08" class="blockG"></li><li id="rotateG_09" class="blockG"></li><li id="rotateG_10" class="blockG"></li><li id="rotateG_11" class="blockG"></li><li id="rotateG_12" class="blockG"></li>',
 				12
 			);
-		function $t(t, e, s, c, i, a) {
-			return Object(n["h"])(), Object(n["c"])("ul", Ht, [Xt]);
+		function Et(t, e, s, i, n, a) {
+			return Object(c["h"])(), Object(c["c"])("ul", qt, [Mt]);
 		}
-		var zt = { name: "LoadList" };
+		var Nt = { name: "LoadList" };
 		s("7e5d");
-		zt.render = $t;
-		var Kt = zt,
-			Wt = (s("b0c0"), { class: "api-info" }),
-			Zt = { key: 0, class: "api-info__text" },
-			te = { key: 1, class: "api-info__text" },
-			ee = { key: 2, class: "api-info__text" },
-			se = { key: 3, class: "api-info__text" },
-			ne = { key: 4, class: "api-info__text" },
-			ce = { key: 5, class: "api-info__text" },
-			ie = { key: 6, class: "api-info__text" };
-		function ae(t, e, s, c, i, a) {
+		Nt.render = Et;
+		var Pt = Nt,
+			Rt = (s("b0c0"), { class: "api-info" }),
+			Jt = { key: 0, class: "api-info__text" },
+			Ht = { key: 1, class: "api-info__text" },
+			Ut = { key: 2, class: "api-info__text" },
+			zt = { key: 3, class: "api-info__text" },
+			Xt = { key: 4, class: "api-info__text" },
+			$t = { key: 5, class: "api-info__text" },
+			Kt = { key: 6, class: "api-info__text" };
+		function Wt(t, e, s, i, n, a) {
 			return (
-				Object(n["h"])(),
-				Object(n["c"])("div", Wt, [
-					(Object(n["h"])(!0),
-					Object(n["c"])(
-						n["a"],
+				Object(c["h"])(),
+				Object(c["c"])("div", Rt, [
+					(Object(c["h"])(!0),
+					Object(c["c"])(
+						c["a"],
 						null,
-						Object(n["i"])(i.list, function(t, e) {
+						Object(c["i"])(n.list, function(t, e) {
 							return (
-								Object(n["h"])(),
-								Object(n["c"])("div", { key: e }, [
+								Object(c["h"])(),
+								Object(c["c"])("div", { key: e }, [
 									"created" === e || "edited" === e
-										? (Object(n["h"])(),
-										  Object(n["c"])(
+										? (Object(c["h"])(),
+										  Object(c["c"])(
 												"p",
-												Zt,
-												Object(n["k"])(e) +
+												Jt,
+												Object(c["k"])(e) +
 													" : " +
-													Object(n["k"])(a.getDate(t)),
+													Object(c["k"])(a.getDate(t)),
 												1
 										  ))
 										: "url" === e
-										? (Object(n["h"])(),
-										  Object(n["c"])("p", te, [
-												Object(n["f"])(Object(n["k"])(e) + " : ", 1),
-												Object(n["g"])(
+										? (Object(c["h"])(),
+										  Object(c["c"])("p", Ht, [
+												Object(c["f"])(Object(c["k"])(e) + " : ", 1),
+												Object(c["g"])(
 													"a",
 													{ href: t, class: "api-info__link" },
 													"Link to API",
@@ -853,32 +860,32 @@
 												),
 										  ]))
 										: "homeworld" === e
-										? (Object(n["h"])(),
-										  Object(n["c"])("p", ee, [
-												Object(n["f"])(Object(n["k"])(e) + " : ", 1),
-												Object(n["g"])(
+										? (Object(c["h"])(),
+										  Object(c["c"])("p", Ut, [
+												Object(c["f"])(Object(c["k"])(e) + " : ", 1),
+												Object(c["g"])(
 													"a",
 													{ href: t, class: "api-info__link" },
-													Object(n["k"])(a.getInfoFromApi(t).name),
+													Object(c["k"])(a.getInfoFromApi(t).name),
 													9,
 													["href"]
 												),
 										  ]))
 										: "films" === e
-										? (Object(n["h"])(),
-										  Object(n["c"])("p", se, [
-												Object(n["f"])(Object(n["k"])(e) + " : ", 1),
-												(Object(n["h"])(!0),
-												Object(n["c"])(
-													n["a"],
+										? (Object(c["h"])(),
+										  Object(c["c"])("p", zt, [
+												Object(c["f"])(Object(c["k"])(e) + " : ", 1),
+												(Object(c["h"])(!0),
+												Object(c["c"])(
+													c["a"],
 													null,
-													Object(n["i"])(t, function(t) {
+													Object(c["i"])(t, function(t) {
 														return (
-															Object(n["h"])(),
-															Object(n["c"])(
+															Object(c["h"])(),
+															Object(c["c"])(
 																"a",
 																{ key: t, href: t, class: "api-info__link" },
-																Object(n["k"])(
+																Object(c["k"])(
 																	a.getInfoFromApi(t).title + ", "
 																),
 																9,
@@ -890,20 +897,20 @@
 												)),
 										  ]))
 										: "vehicles" === e
-										? (Object(n["h"])(),
-										  Object(n["c"])("p", ne, [
-												Object(n["f"])(Object(n["k"])(e) + " : ", 1),
-												(Object(n["h"])(!0),
-												Object(n["c"])(
-													n["a"],
+										? (Object(c["h"])(),
+										  Object(c["c"])("p", Xt, [
+												Object(c["f"])(Object(c["k"])(e) + " : ", 1),
+												(Object(c["h"])(!0),
+												Object(c["c"])(
+													c["a"],
 													null,
-													Object(n["i"])(t, function(t) {
+													Object(c["i"])(t, function(t) {
 														return (
-															Object(n["h"])(),
-															Object(n["c"])(
+															Object(c["h"])(),
+															Object(c["c"])(
 																"a",
 																{ key: t, href: t, class: "api-info__link" },
-																Object(n["k"])(a.getInfoFromApi(t).name + ", "),
+																Object(c["k"])(a.getInfoFromApi(t).name + ", "),
 																9,
 																["href"]
 															)
@@ -913,20 +920,20 @@
 												)),
 										  ]))
 										: "starships" === e
-										? (Object(n["h"])(),
-										  Object(n["c"])("p", ce, [
-												Object(n["f"])(Object(n["k"])(e) + " : ", 1),
-												(Object(n["h"])(!0),
-												Object(n["c"])(
-													n["a"],
+										? (Object(c["h"])(),
+										  Object(c["c"])("p", $t, [
+												Object(c["f"])(Object(c["k"])(e) + " : ", 1),
+												(Object(c["h"])(!0),
+												Object(c["c"])(
+													c["a"],
 													null,
-													Object(n["i"])(t, function(t) {
+													Object(c["i"])(t, function(t) {
 														return (
-															Object(n["h"])(),
-															Object(n["c"])(
+															Object(c["h"])(),
+															Object(c["c"])(
 																"a",
 																{ key: t, href: t, class: "api-info__link" },
-																Object(n["k"])(a.getInfoFromApi(t).name + ", "),
+																Object(c["k"])(a.getInfoFromApi(t).name + ", "),
 																9,
 																["href"]
 															)
@@ -935,11 +942,11 @@
 													128
 												)),
 										  ]))
-										: (Object(n["h"])(),
-										  Object(n["c"])(
+										: (Object(c["h"])(),
+										  Object(c["c"])(
 												"p",
-												ie,
-												Object(n["k"])(e) + " : " + Object(n["k"])(t),
+												Kt,
+												Object(c["k"])(e) + " : " + Object(c["k"])(t),
 												1
 										  )),
 								])
@@ -950,7 +957,7 @@
 				])
 			);
 		}
-		var oe = {
+		var Zt = {
 			name: "ApiInfo",
 			data: function() {
 				return { list: "" };
@@ -965,8 +972,8 @@
 					e < 10 && (e = "0" + e);
 					var s = t.getMonth() + 1;
 					s < 10 && (s = "0" + s);
-					var n = t.getFullYear() % 100;
-					return n < 10 && (n = "0" + n), e + "." + s + "." + n;
+					var c = t.getFullYear() % 100;
+					return c < 10 && (c = "0" + c), e + "." + s + "." + c;
 				},
 				getInfoFromApi: function(t) {
 					var e = this.requestApi(t);
@@ -987,11 +994,11 @@
 			},
 		};
 		s("b868");
-		oe.render = ae;
-		var le = oe,
-			re = {
+		Zt.render = Wt;
+		var te = Zt,
+			ee = {
 				name: "Test",
-				components: { LoadList: Kt, ApiInfo: le },
+				components: { LoadList: Pt, ApiInfo: te },
 				data: function() {
 					return {
 						isFirstQuestionShown: !0,
@@ -1067,17 +1074,17 @@
 						e < 10 && (e = "0" + e);
 						var s = t.getMonth() + 1;
 						s < 10 && (s = "0" + s);
-						var n = t.getFullYear() % 100;
-						return n < 10 && (n = "0" + n), e + "." + s + "." + n;
+						var c = t.getFullYear() % 100;
+						return c < 10 && (c = "0" + c), e + "." + s + "." + c;
 					},
 				},
 			};
 		s("8285");
-		re.render = Ut;
-		var be = re,
-			ue = {
+		ee.render = Yt;
+		var se = ee,
+			ce = {
 				name: "App",
-				components: { Test: be },
+				components: { Test: se },
 				data: function() {
 					return { isTestStarted: !1 };
 				},
@@ -1091,20 +1098,20 @@
 					var t = document.querySelector(".quote"),
 						e = document.querySelector(".cover"),
 						s = document.querySelector(".test_margin"),
-						n = document.querySelector(".footer");
+						c = document.querySelector(".footer");
 					document.addEventListener("scroll", function() {
-						var c = window.pageYOffset;
-						c > t.offsetTop - 600 && t.classList.add("animation"),
-							c > e.offsetTop - 600 && e.classList.add("animation"),
-							c > s.offsetTop - 600 && s.classList.add("animation"),
-							c > n.offsetTop - 800 && n.classList.add("animation");
+						var i = window.pageYOffset;
+						i > t.offsetTop - 600 && t.classList.add("animation"),
+							i > e.offsetTop - 600 && e.classList.add("animation"),
+							i > s.offsetTop - 600 && s.classList.add("animation"),
+							i > c.offsetTop - 800 && c.classList.add("animation");
 					});
 				},
 			};
-		s("44cd");
-		ue.render = q;
-		var de = ue;
-		Object(n["b"])(de).mount("#app");
+		s("4fb9");
+		ce.render = Q;
+		var ie = ce;
+		Object(c["b"])(ie).mount("#app");
 	},
 	"67f2": function(t, e, s) {
 		t.exports = s.p + "img/rune2.4ce97f42.svg";
@@ -1117,16 +1124,8 @@
 		"use strict";
 		s("a369");
 	},
-	"8db7": function(t, e, s) {
-		t.exports = s.p + "img/image.e81bb63a.jpg";
-	},
-	"961b": function(t, e, s) {
-		t.exports = s.p + "img/hands.4bbba02b.png";
-	},
-	"9ae1": function(t, e, s) {
-		t.exports = s.p + "img/woman1.ca706394.png";
-	},
 	a369: function(t, e, s) {},
+	a693: function(t, e, s) {},
 	b868: function(t, e, s) {
 		"use strict";
 		s("ecd9");
@@ -1136,8 +1135,5 @@
 		t.exports = s.p + "img/rune1.5a5552c6.svg";
 	},
 	ecd9: function(t, e, s) {},
-	ed29: function(t, e, s) {
-		t.exports = s.p + "img/eyes.dca57b1f.svg";
-	},
 });
-//# sourceMappingURL=app.1e9ed10a.js.map
+//# sourceMappingURL=app.d3b5aed8.js.map
