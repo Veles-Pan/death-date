@@ -5,7 +5,7 @@
 			Да
 			<div class="sparcle moving"></div>
 		</button>
-		<button class="test__button">
+		<button class="test__button" @click="startTest">
 			Нет
 			<div class="sparcle moving"></div>
 		</button>
@@ -64,7 +64,7 @@
 				@input="hasValidDay"
 				required
 			/>
-			<img src="../assets/arrow.svg" class="arrow_day">
+			<img src="../assets/image/arrow.svg" class="arrow_day" />
 			<input
 				class="test__input"
 				type="number"
@@ -77,7 +77,7 @@
 				@input="hasValidMounth"
 				required
 			/>
-			<img src="../assets/arrow.svg" class="arrow_mounth">
+			<img src="../assets/image/arrow.svg" class="arrow_mounth" />
 			<input
 				class="test__input"
 				type="number"
@@ -90,7 +90,7 @@
 				@input="hasValidYear"
 				required
 			/>
-			<img src="../assets/arrow.svg" class="arrow_year">
+			<img src="../assets/image/arrow.svg" class="arrow_year" />
 			<button
 				type="button"
 				class="test__button"
@@ -401,7 +401,7 @@ export default {
 
 .intro__button:hover {
 	cursor: pointer;
-	opacity: .8;
+	opacity: 0.8;
 }
 
 .test__button:disabled {
@@ -409,7 +409,6 @@ export default {
 }
 
 .test-intro {
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -464,7 +463,6 @@ export default {
 	-moz-appearance: textfield;
 }
 
-
 .test__number {
 	font-weight: 300;
 	font-size: 16px;
@@ -482,6 +480,14 @@ export default {
 
 	text-align: center;
 
+	color: #202024;
+}
+
+.test__input::-moz-placeholder {
+	opacity: 1;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
 	color: #202024;
 }
 
@@ -891,21 +897,21 @@ export default {
 	}
 
 	.arrow_day {
-	top: 30px;
-	right: 15px;
-	width: 15px;
-}
+		top: 30px;
+		right: 15px;
+		width: 15px;
+	}
 
-.arrow_mounth {
-	top: 82px;
-	right: 15px;
-	width: 15px;
-}
+	.arrow_mounth {
+		top: 82px;
+		right: 15px;
+		width: 15px;
+	}
 
-.arrow_year {
-	top: 134px;
-	right: 15px;
-	width: 15px;
-}
+	.arrow_year {
+		top: 134px;
+		right: 15px;
+		width: 15px;
+	}
 }
 </style>
