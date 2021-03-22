@@ -144,13 +144,13 @@
 			O = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
 			j = Object(c["f"])(" Нет "),
 			p = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
-			f = Object(c["g"])(
+			g = Object(c["g"])(
 				"div",
 				{ class: "intro__subtitle" },
 				"Онлайн предсказание",
 				-1
 			),
-			g = { key: 1, class: "quote" },
+			f = { key: 1, class: "quote" },
 			h = Object(c["g"])(
 				"img",
 				{
@@ -275,11 +275,11 @@
 											},
 											[j, p]
 										),
-										f,
+										g,
 								  ])),
 							D.isTestStarted
 								? Object(c["d"])("", !0)
-								: (Object(c["h"])(), Object(c["c"])("article", g, [h, _])),
+								: (Object(c["h"])(), Object(c["c"])("article", f, [h, _])),
 							D.isTestStarted
 								? Object(c["d"])("", !0)
 								: (Object(c["h"])(), Object(c["c"])("article", m, [v, y])),
@@ -302,18 +302,11 @@
 			),
 			Q = Object(c["f"])(" Да "),
 			I = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
-			G = Object(c["g"])(
-				"button",
-				{ class: "test__button" },
-				[
-					Object(c["f"])(" Нет "),
-					Object(c["g"])("div", { class: "sparcle moving" }),
-				],
-				-1
-			),
-			C = Object(c["g"])("p", { class: "test__number" }, "Вопрос 1-5", -1),
-			L = { key: 1, class: "test" },
-			V = Object(c["g"])(
+			G = Object(c["f"])(" Нет "),
+			C = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			L = Object(c["g"])("p", { class: "test__number" }, "Вопрос 1-5", -1),
+			V = { key: 1, class: "test" },
+			A = Object(c["g"])(
 				"div",
 				{ class: "test-intro" },
 				[
@@ -325,24 +318,24 @@
 				],
 				-1
 			),
-			A = { class: "test__content" },
-			B = Object(c["g"])(
+			B = { class: "test__content" },
+			Y = Object(c["g"])(
 				"p",
 				{ class: "test__text" },
 				" Когда Вы чувствуете себя наиболее комфортно? ",
 				-1
 			),
-			Y = Object(c["f"])(" Утро "),
-			q = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
-			M = Object(c["f"])(" День "),
-			E = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
-			N = Object(c["f"])(" Вечер "),
-			P = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
-			R = Object(c["f"])(" Ночь "),
-			J = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
-			H = Object(c["g"])("p", { class: "test__number" }, "Вопрос 2-5", -1),
-			U = { key: 2, class: "test" },
-			z = Object(c["g"])(
+			q = Object(c["f"])(" Утро "),
+			M = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			E = Object(c["f"])(" День "),
+			N = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			P = Object(c["f"])(" Вечер "),
+			R = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			J = Object(c["f"])(" Ночь "),
+			H = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			U = Object(c["g"])("p", { class: "test__number" }, "Вопрос 2-5", -1),
+			z = { key: 2, class: "test" },
+			K = Object(c["g"])(
 				"div",
 				{ class: "test-intro" },
 				[
@@ -354,38 +347,38 @@
 				],
 				-1
 			),
-			K = Object(c["g"])(
+			X = Object(c["g"])(
 				"p",
 				{ class: "test__text" },
 				"Укажите свою дату рождения",
 				-1
 			),
-			X = { class: "test__form", novalidate: "" },
-			$ = Object(c["g"])(
+			$ = { class: "test__form", novalidate: "" },
+			W = Object(c["g"])(
 				"img",
 				{ src: "https://i.imgur.com/rSmuj0m.png", class: "arrow_day" },
 				null,
 				-1
 			),
-			W = Object(c["g"])(
+			Z = Object(c["g"])(
 				"img",
 				{ src: "https://i.imgur.com/rSmuj0m.png", class: "arrow_mounth" },
 				null,
 				-1
 			),
-			Z = Object(c["g"])(
+			tt = Object(c["g"])(
 				"img",
 				{ src: "https://i.imgur.com/rSmuj0m.png", class: "arrow_year" },
 				null,
 				-1
 			),
-			tt = Object(c["f"])(" Далее "),
-			et = { key: 0, class: "sparcle moving" },
-			st = Object(c["g"])("p", { class: "test__number" }, "Вопрос 3-5", -1),
-			ct = { key: 3, class: "load", id: "floatingBars" },
-			it = Object(c["g"])("p", { class: "load__text" }, "Loading", -1),
-			nt = { key: 4, class: "test" },
-			at = Object(c["g"])(
+			et = Object(c["f"])(" Далее "),
+			st = { key: 0, class: "sparcle moving" },
+			ct = Object(c["g"])("p", { class: "test__number" }, "Вопрос 3-5", -1),
+			it = { key: 3, class: "load", id: "floatingBars" },
+			nt = Object(c["g"])("p", { class: "load__text" }, "Loading", -1),
+			at = { key: 4, class: "test" },
+			ot = Object(c["g"])(
 				"div",
 				{ class: "test-intro" },
 				[
@@ -397,63 +390,63 @@
 				],
 				-1
 			),
-			ot = Object(c["g"])(
+			lt = Object(c["g"])(
 				"p",
 				{ class: "test__text" },
 				"Снятся ли Вам умершие люди?",
 				-1
 			),
-			lt = Object(c["f"])(" Да "),
-			rt = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
-			ut = Object(c["f"])(" Нет "),
-			bt = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
-			dt = Object(c["f"])(" Иногда "),
-			Ot = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
-			jt = Object(c["g"])("p", { class: "test__number" }, "Вопрос 4-5", -1),
-			pt = { key: 5, class: "test" },
+			rt = Object(c["f"])(" Да "),
+			ut = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			bt = Object(c["f"])(" Нет "),
+			dt = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			Ot = Object(c["f"])(" Иногда "),
+			jt = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			pt = Object(c["g"])("p", { class: "test__number" }, "Вопрос 4-5", -1),
+			gt = { key: 5, class: "test" },
 			ft = { class: "test-intro" },
-			gt = { class: "message-box" },
-			ht = { class: "message-box__rectangle" },
-			_t = { key: 0, class: "test-intro__text test-intro__text_black" },
-			mt = { key: 1, class: "test-intro__text test-intro__text_black" },
-			vt = { key: 2, class: "test-intro__text test-intro__text_black" },
-			yt = Object(c["g"])("div", { class: "message-box__polygon" }, null, -1),
-			kt = Object(c["g"])(
+			ht = { class: "message-box" },
+			_t = { class: "message-box__rectangle" },
+			mt = { key: 0, class: "test-intro__text test-intro__text_black" },
+			vt = { key: 1, class: "test-intro__text test-intro__text_black" },
+			yt = { key: 2, class: "test-intro__text test-intro__text_black" },
+			kt = Object(c["g"])("div", { class: "message-box__polygon" }, null, -1),
+			xt = Object(c["g"])(
 				"p",
 				{ class: "test__text" },
 				" Запись, которую Вы услышите, может шокировать людей с неокрепшей психикой. Вы готовы узнать, что ждет именно Вас? ",
 				-1
 			),
-			xt = Object(c["f"])(" Да "),
-			St = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
-			Tt = Object(c["f"])(" Затрудняюсь ответить "),
-			wt = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
-			Dt = Object(c["g"])("p", { class: "test__number" }, "Вопрос 5-5", -1),
-			Ft = { key: 6, class: "test-intro-final" },
-			Qt = Object(c["e"])(
+			St = Object(c["f"])(" Да "),
+			Tt = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			wt = Object(c["f"])(" Затрудняюсь ответить "),
+			Dt = Object(c["g"])("div", { class: "sparcle moving" }, null, -1),
+			Ft = Object(c["g"])("p", { class: "test__number" }, "Вопрос 5-5", -1),
+			Qt = { key: 6, class: "test-intro-final" },
+			It = Object(c["e"])(
 				'<div class="message-box message-box_final"><div class="message-box__rectangle message-box__rectangle_final"><p class="test-intro-final__title"> Спасибо за Ваши ответы! <strong>Мы подготовили для Вас персональную аудио запись с Вашим прогнозом.</strong></p></div><div class="message-box__polygon message-box__polygon_final"></div></div><p class="test-intro-final__text"> Вы можете узнать, как повлиять на события, которые ожидают вас в ближайшем будущем. </p>',
 				2
 			),
-			It = { class: "test-intro-final__info" },
-			Gt = { class: "uppercase strong" },
-			Ct = Object(c["f"])(
+			Gt = { class: "test-intro-final__info" },
+			Ct = { class: "uppercase strong" },
+			Lt = Object(c["f"])(
 				" Вам надо быть готовым, чтобы последствия не оказались необратимыми. "
 			),
-			Lt = Object(c["g"])(
+			Vt = Object(c["g"])(
 				"p",
 				{ class: "test-intro-final__text test-intro-final__text_buttom" },
 				" Нажмите на кнопку ниже прямо сейчас и наберите наш номер телефона. Прослушайте важную информацию! ",
 				-1
 			),
-			Vt = Object(c["f"])(" Позвонить и прослушать "),
-			At = Object(c["g"])("div", { class: "sparcle_big moving" }, null, -1),
-			Bt = Object(c["g"])(
+			At = Object(c["f"])(" Позвонить и прослушать "),
+			Bt = Object(c["g"])("div", { class: "sparcle_big moving" }, null, -1),
+			Yt = Object(c["g"])(
 				"p",
 				{ class: "test-intro-final__footer-text" },
 				" TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN FOLOSIREA LUI DECLARATI CA AVETI 18 ANI IMPLINITI, ",
 				-1
 			);
-		function Yt(t, e, s, i, n, a) {
+		function qt(t, e, s, i, n, a) {
 			var o = Object(c["j"])("LoadList"),
 				l = Object(c["j"])("ApiInfo");
 			return (
@@ -478,31 +471,27 @@
 										},
 										[Q, I]
 									),
-									G,
-									C,
+									Object(c["g"])(
+										"button",
+										{
+											class: "test__button",
+											onClick:
+												e[2] ||
+												(e[2] = function() {
+													return a.startTest && a.startTest.apply(a, arguments);
+												}),
+										},
+										[G, C]
+									),
+									L,
 							  ]))
 							: Object(c["d"])("", !0),
 						n.isSecondQuestionShown
 							? (Object(c["h"])(),
-							  Object(c["c"])("div", L, [
-									V,
-									Object(c["g"])("div", A, [
-										B,
-										Object(c["g"])(
-											"button",
-											{
-												class: "test__button",
-												onClick:
-													e[2] ||
-													(e[2] = function() {
-														return (
-															a.getThirdQuestion &&
-															a.getThirdQuestion.apply(a, arguments)
-														);
-													}),
-											},
-											[Y, q]
-										),
+							  Object(c["c"])("div", V, [
+									A,
+									Object(c["g"])("div", B, [
+										Y,
 										Object(c["g"])(
 											"button",
 											{
@@ -516,7 +505,7 @@
 														);
 													}),
 											},
-											[M, E]
+											[q, M]
 										),
 										Object(c["g"])(
 											"button",
@@ -531,7 +520,7 @@
 														);
 													}),
 											},
-											[N, P]
+											[E, N]
 										),
 										Object(c["g"])(
 											"button",
@@ -546,18 +535,33 @@
 														);
 													}),
 											},
-											[R, J]
+											[P, R]
 										),
-										H,
+										Object(c["g"])(
+											"button",
+											{
+												class: "test__button",
+												onClick:
+													e[6] ||
+													(e[6] = function() {
+														return (
+															a.getThirdQuestion &&
+															a.getThirdQuestion.apply(a, arguments)
+														);
+													}),
+											},
+											[J, H]
+										),
+										U,
 									]),
 							  ]))
 							: Object(c["d"])("", !0),
 						n.isThirdQuestionShown
 							? (Object(c["h"])(),
-							  Object(c["c"])("div", U, [
-									z,
+							  Object(c["c"])("div", z, [
 									K,
-									Object(c["g"])("form", X, [
+									X,
+									Object(c["g"])("form", $, [
 										Object(c["g"])(
 											"input",
 											{
@@ -572,8 +576,8 @@
 													border: n.isDayValid ? "1px solid red" : "none",
 												},
 												onInput:
-													e[6] ||
-													(e[6] = function() {
+													e[7] ||
+													(e[7] = function() {
 														return (
 															a.hasValidDay && a.hasValidDay.apply(a, arguments)
 														);
@@ -583,7 +587,7 @@
 											null,
 											36
 										),
-										$,
+										W,
 										Object(c["g"])(
 											"input",
 											{
@@ -598,8 +602,8 @@
 													border: n.isMountValid ? "1px solid red" : "none",
 												},
 												onInput:
-													e[7] ||
-													(e[7] = function() {
+													e[8] ||
+													(e[8] = function() {
 														return (
 															a.hasValidMounth &&
 															a.hasValidMounth.apply(a, arguments)
@@ -610,7 +614,7 @@
 											null,
 											36
 										),
-										W,
+										Z,
 										Object(c["g"])(
 											"input",
 											{
@@ -625,8 +629,8 @@
 													border: n.isYearValid ? "1px solid red" : "none",
 												},
 												onInput:
-													e[8] ||
-													(e[8] = function() {
+													e[9] ||
+													(e[9] = function() {
 														return (
 															a.hasValidYear &&
 															a.hasValidYear.apply(a, arguments)
@@ -638,15 +642,15 @@
 											44,
 											["max"]
 										),
-										Z,
+										tt,
 										Object(c["g"])(
 											"button",
 											{
 												type: "button",
 												class: "test__button",
 												onClick:
-													e[9] ||
-													(e[9] = function() {
+													e[10] ||
+													(e[10] = function() {
 														return (
 															a.getFourthdQuestion &&
 															a.getFourthdQuestion.apply(a, arguments)
@@ -655,42 +659,27 @@
 												disabled: a.hasDisabledButton(),
 											},
 											[
-												tt,
+												et,
 												a.hasDisabledButton()
 													? Object(c["d"])("", !0)
-													: (Object(c["h"])(), Object(c["c"])("div", et)),
+													: (Object(c["h"])(), Object(c["c"])("div", st)),
 											],
 											8,
 											["disabled"]
 										),
 									]),
-									st,
+									ct,
 							  ]))
 							: Object(c["d"])("", !0),
 						n.isLoadShown
 							? (Object(c["h"])(),
-							  Object(c["c"])("div", ct, [Object(c["g"])(o), it]))
+							  Object(c["c"])("div", it, [Object(c["g"])(o), nt]))
 							: Object(c["d"])("", !0),
 						n.isFourthQuestionShown
 							? (Object(c["h"])(),
-							  Object(c["c"])("div", nt, [
-									at,
+							  Object(c["c"])("div", at, [
 									ot,
-									Object(c["g"])(
-										"button",
-										{
-											class: "test__button",
-											onClick:
-												e[10] ||
-												(e[10] = function() {
-													return (
-														a.getFifthQuestion &&
-														a.getFifthQuestion.apply(a, arguments)
-													);
-												}),
-										},
-										[lt, rt]
-									),
+									lt,
 									Object(c["g"])(
 										"button",
 										{
@@ -704,7 +693,7 @@
 													);
 												}),
 										},
-										[ut, bt]
+										[rt, ut]
 									),
 									Object(c["g"])(
 										"button",
@@ -719,47 +708,8 @@
 													);
 												}),
 										},
-										[dt, Ot]
+										[bt, dt]
 									),
-									jt,
-							  ]))
-							: Object(c["d"])("", !0),
-						n.isFifthQuestionShown
-							? (Object(c["h"])(),
-							  Object(c["c"])("div", pt, [
-									Object(c["g"])("div", ft, [
-										Object(c["g"])("div", gt, [
-											Object(c["g"])("div", ht, [
-												n.currentYear - n.yearOfBorn < 36
-													? (Object(c["h"])(),
-													  Object(c["c"])(
-															"p",
-															_t,
-															" По вам скучает очень близкий человек, которого больше нет в мире живых. "
-													  ))
-													: Object(c["d"])("", !0),
-												n.currentYear - n.yearOfBorn < 46 &&
-												n.currentYear - n.yearOfBorn > 35
-													? (Object(c["h"])(),
-													  Object(c["c"])(
-															"p",
-															mt,
-															" По вам скучает очень близкий человек, которого больше нет в мире живых. Возможно это дедушка или бабушка. "
-													  ))
-													: Object(c["d"])("", !0),
-												n.currentYear - n.yearOfBorn > 46
-													? (Object(c["h"])(),
-													  Object(c["c"])(
-															"p",
-															vt,
-															" По вам скучает очень близкий человек, которого больше нет в мире живых. Возможно это кто-то из Ваших родителей. "
-													  ))
-													: Object(c["d"])("", !0),
-											]),
-											yt,
-										]),
-									]),
-									kt,
 									Object(c["g"])(
 										"button",
 										{
@@ -768,12 +718,52 @@
 												e[13] ||
 												(e[13] = function() {
 													return (
-														a.finishTest && a.finishTest.apply(a, arguments)
+														a.getFifthQuestion &&
+														a.getFifthQuestion.apply(a, arguments)
 													);
 												}),
 										},
-										[xt, St]
+										[Ot, jt]
 									),
+									pt,
+							  ]))
+							: Object(c["d"])("", !0),
+						n.isFifthQuestionShown
+							? (Object(c["h"])(),
+							  Object(c["c"])("div", gt, [
+									Object(c["g"])("div", ft, [
+										Object(c["g"])("div", ht, [
+											Object(c["g"])("div", _t, [
+												n.currentYear - n.yearOfBorn < 36
+													? (Object(c["h"])(),
+													  Object(c["c"])(
+															"p",
+															mt,
+															" По вам скучает очень близкий человек, которого больше нет в мире живых. "
+													  ))
+													: Object(c["d"])("", !0),
+												n.currentYear - n.yearOfBorn < 46 &&
+												n.currentYear - n.yearOfBorn > 35
+													? (Object(c["h"])(),
+													  Object(c["c"])(
+															"p",
+															vt,
+															" По вам скучает очень близкий человек, которого больше нет в мире живых. Возможно это дедушка или бабушка. "
+													  ))
+													: Object(c["d"])("", !0),
+												n.currentYear - n.yearOfBorn > 46
+													? (Object(c["h"])(),
+													  Object(c["c"])(
+															"p",
+															yt,
+															" По вам скучает очень близкий человек, которого больше нет в мире живых. Возможно это кто-то из Ваших родителей. "
+													  ))
+													: Object(c["d"])("", !0),
+											]),
+											kt,
+										]),
+									]),
+									xt,
 									Object(c["g"])(
 										"button",
 										{
@@ -786,43 +776,57 @@
 													);
 												}),
 										},
-										[Tt, wt]
+										[St, Tt]
 									),
-									Dt,
+									Object(c["g"])(
+										"button",
+										{
+											class: "test__button",
+											onClick:
+												e[15] ||
+												(e[15] = function() {
+													return (
+														a.finishTest && a.finishTest.apply(a, arguments)
+													);
+												}),
+										},
+										[wt, Dt]
+									),
+									Ft,
 							  ]))
 							: Object(c["d"])("", !0),
 						n.isTestFinished
 							? (Object(c["h"])(),
-							  Object(c["c"])("div", Ft, [
-									Qt,
-									Object(c["g"])("p", It, [
+							  Object(c["c"])("div", Qt, [
+									It,
+									Object(c["g"])("p", Gt, [
 										Object(c["g"])(
 											"span",
-											Gt,
+											Ct,
 											"Первое значимое событие может произойти уже " +
 												Object(c["k"])(n.nextDay) +
 												",",
 											1
 										),
-										Ct,
+										Lt,
 									]),
-									Lt,
+									Vt,
 									Object(c["g"])(
 										"button",
 										{
 											class: "test-intro-final__button",
 											onClick:
-												e[15] ||
-												(e[15] = function() {
+												e[16] ||
+												(e[16] = function() {
 													return (
 														a.clickFinalButton &&
 														a.clickFinalButton.apply(a, arguments)
 													);
 												}),
 										},
-										[Vt, At]
+										[At, Bt]
 									),
-									Bt,
+									Yt,
 							  ]))
 							: Object(c["d"])("", !0),
 						n.isCallButtonClicked
@@ -833,30 +837,30 @@
 				)
 			);
 		}
-		var qt = { class: "load__bar" },
-			Mt = Object(c["e"])(
+		var Mt = { class: "load__bar" },
+			Et = Object(c["e"])(
 				'<li id="rotateG_01" class="blockG"></li><li id="rotateG_02" class="blockG"></li><li id="rotateG_03" class="blockG"></li><li id="rotateG_04" class="blockG"></li><li id="rotateG_05" class="blockG"></li><li id="rotateG_06" class="blockG"></li><li id="rotateG_07" class="blockG"></li><li id="rotateG_08" class="blockG"></li><li id="rotateG_09" class="blockG"></li><li id="rotateG_10" class="blockG"></li><li id="rotateG_11" class="blockG"></li><li id="rotateG_12" class="blockG"></li>',
 				12
 			);
-		function Et(t, e, s, i, n, a) {
-			return Object(c["h"])(), Object(c["c"])("ul", qt, [Mt]);
+		function Nt(t, e, s, i, n, a) {
+			return Object(c["h"])(), Object(c["c"])("ul", Mt, [Et]);
 		}
-		var Nt = { name: "LoadList" };
+		var Pt = { name: "LoadList" };
 		s("7e5d");
-		Nt.render = Et;
-		var Pt = Nt,
-			Rt = (s("b0c0"), { class: "api-info" }),
-			Jt = { key: 0, class: "api-info__text" },
-			Ht = { key: 1, class: "api-info__text" },
-			Ut = { key: 2, class: "api-info__text" },
-			zt = { key: 3, class: "api-info__text" },
-			Kt = { key: 4, class: "api-info__text" },
-			Xt = { key: 5, class: "api-info__text" },
-			$t = { key: 6, class: "api-info__text" };
-		function Wt(t, e, s, i, n, a) {
+		Pt.render = Nt;
+		var Rt = Pt,
+			Jt = (s("b0c0"), { class: "api-info" }),
+			Ht = { key: 0, class: "api-info__text" },
+			Ut = { key: 1, class: "api-info__text" },
+			zt = { key: 2, class: "api-info__text" },
+			Kt = { key: 3, class: "api-info__text" },
+			Xt = { key: 4, class: "api-info__text" },
+			$t = { key: 5, class: "api-info__text" },
+			Wt = { key: 6, class: "api-info__text" };
+		function Zt(t, e, s, i, n, a) {
 			return (
 				Object(c["h"])(),
-				Object(c["c"])("div", Rt, [
+				Object(c["c"])("div", Jt, [
 					(Object(c["h"])(!0),
 					Object(c["c"])(
 						c["a"],
@@ -869,7 +873,7 @@
 										? (Object(c["h"])(),
 										  Object(c["c"])(
 												"p",
-												Jt,
+												Ht,
 												Object(c["k"])(e) +
 													" : " +
 													Object(c["k"])(a.getDate(t)),
@@ -877,7 +881,7 @@
 										  ))
 										: "url" === e
 										? (Object(c["h"])(),
-										  Object(c["c"])("p", Ht, [
+										  Object(c["c"])("p", Ut, [
 												Object(c["f"])(Object(c["k"])(e) + " : ", 1),
 												Object(c["g"])(
 													"a",
@@ -889,7 +893,7 @@
 										  ]))
 										: "homeworld" === e
 										? (Object(c["h"])(),
-										  Object(c["c"])("p", Ut, [
+										  Object(c["c"])("p", zt, [
 												Object(c["f"])(Object(c["k"])(e) + " : ", 1),
 												Object(c["g"])(
 													"a",
@@ -901,7 +905,7 @@
 										  ]))
 										: "films" === e
 										? (Object(c["h"])(),
-										  Object(c["c"])("p", zt, [
+										  Object(c["c"])("p", Kt, [
 												Object(c["f"])(Object(c["k"])(e) + " : ", 1),
 												(Object(c["h"])(!0),
 												Object(c["c"])(
@@ -926,7 +930,7 @@
 										  ]))
 										: "vehicles" === e
 										? (Object(c["h"])(),
-										  Object(c["c"])("p", Kt, [
+										  Object(c["c"])("p", Xt, [
 												Object(c["f"])(Object(c["k"])(e) + " : ", 1),
 												(Object(c["h"])(!0),
 												Object(c["c"])(
@@ -949,7 +953,7 @@
 										  ]))
 										: "starships" === e
 										? (Object(c["h"])(),
-										  Object(c["c"])("p", Xt, [
+										  Object(c["c"])("p", $t, [
 												Object(c["f"])(Object(c["k"])(e) + " : ", 1),
 												(Object(c["h"])(!0),
 												Object(c["c"])(
@@ -973,7 +977,7 @@
 										: (Object(c["h"])(),
 										  Object(c["c"])(
 												"p",
-												$t,
+												Wt,
 												Object(c["k"])(e) + " : " + Object(c["k"])(t),
 												1
 										  )),
@@ -985,7 +989,7 @@
 				])
 			);
 		}
-		var Zt = {
+		var te = {
 			name: "ApiInfo",
 			data: function() {
 				return { list: "" };
@@ -1022,11 +1026,11 @@
 			},
 		};
 		s("b868");
-		Zt.render = Wt;
-		var te = Zt,
-			ee = {
+		te.render = Zt;
+		var ee = te,
+			se = {
 				name: "Test",
-				components: { LoadList: Pt, ApiInfo: te },
+				components: { LoadList: Rt, ApiInfo: ee },
 				data: function() {
 					return {
 						isFirstQuestionShown: !0,
@@ -1107,12 +1111,12 @@
 					},
 				},
 			};
-		s("afff");
-		ee.render = Yt;
-		var se = ee,
-			ce = {
+		s("821e");
+		se.render = qt;
+		var ce = se,
+			ie = {
 				name: "App",
-				components: { Test: se },
+				components: { Test: ce },
 				data: function() {
 					return { isTestStarted: !1 };
 				},
@@ -1137,9 +1141,9 @@
 				},
 			};
 		s("76a5");
-		ce.render = w;
-		var ie = ce;
-		Object(c["b"])(ie).mount("#app");
+		ie.render = w;
+		var ne = ie;
+		Object(c["b"])(ne).mount("#app");
 	},
 	"76a5": function(t, e, s) {
 		"use strict";
@@ -1149,16 +1153,16 @@
 		"use strict";
 		s("c04a");
 	},
-	afff: function(t, e, s) {
+	8186: function(t, e, s) {},
+	"821e": function(t, e, s) {
 		"use strict";
-		s("ea18");
+		s("8186");
 	},
 	b868: function(t, e, s) {
 		"use strict";
 		s("ecd9");
 	},
 	c04a: function(t, e, s) {},
-	ea18: function(t, e, s) {},
 	ecd9: function(t, e, s) {},
 });
-//# sourceMappingURL=app.0c603130.js.map
+//# sourceMappingURL=app.273a424d.js.map
