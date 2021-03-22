@@ -92,8 +92,6 @@ export default {
 		const test = document.querySelector(".test_margin");
 		const footer = document.querySelector(".footer");
 
-		console.log(quote);
-
 		document.addEventListener("scroll", () => {
 			let scrollY = window.pageYOffset;
 
